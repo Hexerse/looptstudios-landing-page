@@ -1,0 +1,38 @@
+
+
+@mixin background($url){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2rem;
+    width: 90%;
+}
+
+.company__creations{
+    display: grid;
+    margin: auto;
+    gap: 1rem;
+    font-size: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows:max-content;
+    font-family: $Josefin-ff;
+    font-weight: $Josefun-fw;
+    height: 100vh;
+    width: 90%;
+    text-transform: uppercase; 
+    color: white;
+        .creation__container{
+            position: relative;
+        }
+
+        .creation__image{
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+        
+        .creations{
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1rem;
+            line-height: 1;
+        }
+}

@@ -1,0 +1,28 @@
+@mixin putCenter($gap){
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+section.company__portfolio {
+  @include putCenter(1rem);
+  width: 90%;
+  margin: auto;
+    .portfolio__text{
+        @include putCenter(1rem);
+        text-align: center;
+        h2{
+            font-family: $Josefin-ff;
+            font-weight: $Josefun-fw;
+            text-transform: uppercase;
+        }
+
+        p{
+            font-family: $Alata-ff;
+            font-weight: $Josefun-fw;
+            color: $Very-Dark-Gray;
+            line-height: 1.5;
+        }
+    }
+}
+
