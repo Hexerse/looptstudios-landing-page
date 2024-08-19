@@ -75,6 +75,11 @@ header {
   font-family: "Alata", sans-serif;
   padding: 1.5rem 1rem;
 }
+@media (width > 500px) {
+  header {
+    background-image: url(./images/desktop/image-hero.jpg);
+  }
+}
 
 nav {
   display: flex;
@@ -113,6 +118,11 @@ nav img {
   z-index: 98;
 }
 
+@media (width > 500px) {
+  .header__big__text {
+    width: 50%;
+  }
+}
 .header__hamburger {
   z-index: 99;
   display: flex;
@@ -144,6 +154,7 @@ section.company__portfolio {
   gap: 1rem;
   width: 90%;
   margin: auto;
+  position: relative;
 }
 section.company__portfolio .portfolio__text {
   display: flex;
@@ -162,7 +173,28 @@ section.company__portfolio .portfolio__text p {
   color: hsl(0, 0%, 41%);
   line-height: 1.5;
 }
+@media (width > 500px) {
+  section.company__portfolio .portfolio__text {
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    right: 0;
+    padding: 3rem;
+  }
+  section.company__portfolio .portfolio__text h2 {
+    font-size: 2rem;
+  }
+  section.company__portfolio .portfolio__text p {
+    text-wrap: pretty;
+  }
+}
 
+@media (width > 500px) {
+  section.company__portfolio {
+    flex-direction: row;
+    align-items: end;
+  }
+}
 .company__creations {
   display: grid;
   margin: auto;
@@ -182,10 +214,11 @@ section.company__portfolio .portfolio__text p {
 }
 .company__creations .creation__container {
   color: white;
-  min-height: 10rem;
+  height: 10rem;
   display: flex;
   line-height: 1.1;
   position: relative;
+  display: grid;
 }
 .company__creations .creation__container:nth-child(2) {
   background-image: url(./images/mobile/image-deep-earth.jpg);
@@ -244,6 +277,56 @@ section.company__portfolio .portfolio__text p {
   padding-top: 0.7rem;
   padding-bottom: 0.3rem;
   text-transform: uppercase;
+}
+@media (width > 500px) {
+  .company__creations .company__creations {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+  }
+  .company__creations .creation__container {
+    max-width: 10rem;
+    min-height: 20rem;
+  }
+  .company__creations .creation__container:nth-child(2) {
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .company__creations .creation__container:nth-child(3) {
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .company__creations .creation__container:nth-child(4) {
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .company__creations .creation__container:nth-child(5) {
+    background-image: url(./images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .company__creations .creation__container:nth-child(6) {
+    background-image: url(./images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .company__creations .creation__container:nth-child(7) {
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .company__creations .creation__container:nth-child(8) {
+    background-image: url(./images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .company__creations .creation__container:nth-child(9) {
+    background-image: url(./images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .footer {

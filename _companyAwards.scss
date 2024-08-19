@@ -8,6 +8,7 @@ section.company__portfolio {
   @include putCenter(1rem);
   width: 90%;
   margin: auto;
+  position: relative;
     .portfolio__text{
         @include putCenter(1rem);
         text-align: center;
@@ -23,6 +24,27 @@ section.company__portfolio {
             color: $Very-Dark-Gray;
             line-height: 1.5;
         }
+        @media (width > 500px){
+          position: absolute;
+          background-color: white;
+          width: 60%;
+          right: 0;
+          padding: 3rem;
+
+          h2{
+            font-size: 2rem;
+          }
+          p{
+           text-wrap: pretty;
+          }
+        }
     }
 }
 
+@media (width > 500px){
+  section.company__portfolio{
+    flex-direction: row;
+    align-items: end;
+  }
+
+}

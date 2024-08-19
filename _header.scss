@@ -13,6 +13,10 @@ header {
   height: 100vh;
   font-family: $Alata-ff;
   @include phonePadding();
+
+  @media (width > 500px){
+    background-image: url(./images/desktop/image-hero.jpg);
+  }
 }
 
 nav {
@@ -52,3 +56,9 @@ nav {
   }
 }
 
+@media (width > 500px){
+  .header__big__text{
+    width: 50%;
+    
+  }
+}
