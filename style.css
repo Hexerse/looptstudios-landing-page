@@ -166,6 +166,7 @@ section.company__portfolio .portfolio__text p {
 .company__creations {
   display: grid;
   margin: auto;
+  margin-top: 5rem;
   gap: 1rem;
   font-size: 2rem;
   grid-template-columns: 1fr;
@@ -175,19 +176,82 @@ section.company__portfolio .portfolio__text p {
   height: 100vh;
   width: 90%;
   text-transform: uppercase;
-  color: white;
+}
+.company__creations .creation__heading {
+  text-align: center;
 }
 .company__creations .creation__container {
+  color: white;
+  min-height: 10rem;
+  display: flex;
+  line-height: 1.1;
   position: relative;
 }
-.company__creations .creation__image {
-  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+.company__creations .creation__container:nth-child(2) {
+  background-image: url(./images/mobile/image-deep-earth.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.company__creations .creation__container:nth-child(3) {
+  background-image: url(./images/mobile/image-night-arcade.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.company__creations .creation__container:nth-child(4) {
+  background-image: url(./images/mobile/image-soccer-team.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.company__creations .creation__container:nth-child(5) {
+  background-image: url(./images/mobile/image-grid.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.company__creations .creation__container:nth-child(6) {
+  background-image: url(./images/mobile/image-from-above.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.company__creations .creation__container:nth-child(7) {
+  background-image: url(./images/mobile/image-pocket-borealis.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.company__creations .creation__container:nth-child(8) {
+  background-image: url(./images/mobile/image-curiosity.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.company__creations .creation__container:nth-child(9) {
+  background-image: url(./images/mobile/image-fisheye.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .company__creations .creations {
   position: absolute;
-  bottom: 1.5rem;
-  left: 1rem;
-  line-height: 1;
+  left: 5%;
+  bottom: 15%;
+}
+.company__creations .creation__reveal {
+  margin: auto;
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+  font-size: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  letter-spacing: 4px;
+  font-weight: 400;
+  width: 40%;
+  padding-top: 0.7rem;
+  padding-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.footer {
+  height: 5rem;
+}
+
+body {
+  height: 100svh;
 }
 
 .hidden {

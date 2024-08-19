@@ -76,6 +76,11 @@ $Josefun-fw: 300;
 @import "./hamburger";
 @import './companyAwards';
 @import './companyCreations';
+@import './footer';
+
+body{
+  height: 100svh;
+}
 
 .hidden {
   display: none;
