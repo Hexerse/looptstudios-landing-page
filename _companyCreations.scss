@@ -5,13 +5,12 @@
 }
 
 .company__creations {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin: auto;
   margin-top: 5rem;
   gap: 1rem;
   font-size: 2rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: max-content;
   font-family: $Josefin-ff;
   font-weight: $Josefun-fw;
   height: 100%;
@@ -31,49 +30,49 @@
     display: grid;
   }
 
-  .creation__container:nth-child(2) {
+  .creation__container:nth-child(1) {
     background-image: url(./images/mobile/image-deep-earth.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .creation__container:nth-child(3) {
+  .creation__container:nth-child(2) {
     background-image: url(./images/mobile/image-night-arcade.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .creation__container:nth-child(4) {
+  .creation__container:nth-child(3) {
     background-image: url(./images/mobile/image-soccer-team.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .creation__container:nth-child(5) {
+  .creation__container:nth-child(4) {
     background-image: url(./images/mobile/image-grid.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .creation__container:nth-child(6) {
+  .creation__container:nth-child(5) {
     background-image: url(./images/mobile/image-from-above.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .creation__container:nth-child(7) {
+  .creation__container:nth-child(6) {
     background-image: url(./images/mobile/image-pocket-borealis.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .creation__container:nth-child(8) {
+  .creation__container:nth-child(7) {
     background-image: url(./images/mobile/image-curiosity.jpg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  .creation__container:nth-child(9) {
+  .creation__container:nth-child(8) {
     background-image: url(./images/mobile/image-fisheye.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -85,7 +84,7 @@
     bottom: 15%;
   }
 
-  .creation__reveal{
+  .creation__reveal {
     margin: auto;
     border: none;
     background-color: white;
@@ -99,65 +98,65 @@
     text-transform: uppercase;
   }
 
-  @media (width > 500px){
-    
-    .company__creations{
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: auto;
+  @media (min-width: 500px) {
+    .container__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 100%;
+      justify-items: center;
     }
 
-    .creation__container{
-      max-width: 10rem;
-    min-height: 20rem;
+    .creation__container {
+      height: 30rem;
+      width: 16rem;
     }
 
-    .creation__container:nth-child(2) {
+    .creation__container:nth-child(1) {
       background-image: url(./images/desktop/image-deep-earth.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    .creation__container:nth-child(3) {
+
+    .creation__container:nth-child(2) {
       background-image: url(./images/desktop/image-night-arcade.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    .creation__container:nth-child(4) {
+
+    .creation__container:nth-child(3) {
       background-image: url(./images/desktop/image-soccer-team.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    .creation__container:nth-child(5) {
+
+    .creation__container:nth-child(4) {
       background-image: url(./images/desktop/image-grid.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    .creation__container:nth-child(6) {
+
+    .creation__container:nth-child(5) {
       background-image: url(./images/desktop/image-from-above.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    .creation__container:nth-child(7) {
+
+    .creation__container:nth-child(6) {
       background-image: url(./images/desktop/image-pocket-borealis.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    .creation__container:nth-child(8) {
+
+    .creation__container:nth-child(7) {
       background-image: url(./images/desktop/image-curiosity.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
-  
-    .creation__container:nth-child(9) {
+
+    .creation__container:nth-child(8) {
       background-image: url(./images/desktop/image-fisheye.jpg);
       background-repeat: no-repeat;
       background-size: contain;
     }
   }
-
 }
