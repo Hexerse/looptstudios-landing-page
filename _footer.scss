@@ -1,3 +1,33 @@
 .footer{
-    height: 5rem;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: $Alata-ff;
+    margin-top: 5rem;
+    gap: 2rem;
+    img{
+        margin-top: 3rem;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    .footer__socials{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .rights{
+        color: $Dark-Gray;
+        margin-bottom: 2rem;
+    }
 }

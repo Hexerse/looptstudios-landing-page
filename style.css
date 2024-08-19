@@ -173,7 +173,7 @@ section.company__portfolio .portfolio__text p {
   grid-template-rows: max-content;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  height: 100vh;
+  height: 100%;
   width: 90%;
   text-transform: uppercase;
 }
@@ -247,11 +247,39 @@ section.company__portfolio .portfolio__text p {
 }
 
 .footer {
-  height: 5rem;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Alata", sans-serif;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+.footer img {
+  margin-top: 3rem;
+}
+.footer ul {
+  text-align: center;
+  padding: 0;
+}
+.footer li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.footer .footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+.footer .rights {
+  color: hsl(0, 0%, 55%);
+  margin-bottom: 2rem;
 }
 
 body {
-  height: 100svh;
+  height: 100%;
 }
 
 .hidden {
